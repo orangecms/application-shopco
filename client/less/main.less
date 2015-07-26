@@ -1,0 +1,36 @@
+@import "mixins";
+
+h1, h2 {
+  margin: .5em .125em;
+  padding: .25em;
+  border-radius: .125em;
+  background-color: #eeffee;
+}
+
+p {
+  font-size: 20pt;
+  background-color: #ffffee;
+}
+
+.list {
+  ul {
+    font-size: 18pt;
+    list-style: none;
+    li::before {
+      content: counter(item) ".";
+    }
+    li {
+      padding: .25em .5em;
+      background-color: #f0e8f8;
+      counter-increment: item;
+      .flex(row);
+      .count {
+        margin: 0 1em;
+        color: #143;
+      }
+      .name {
+        color: #469;
+      }
+    }
+  }
+}

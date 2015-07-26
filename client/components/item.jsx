@@ -1,5 +1,5 @@
 var Item = ReactMeteor.createClass({
-    templateName: "Item",
+    templateName: "item",
 
     // Make sure your component implements this method.
     getMeteorState: function() {

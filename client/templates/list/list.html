@@ -1,0 +1,13 @@
+<template name="list">
+  {{#if items}}
+    <div class="container list">
+      <h2>A short list</h2>
+
+      <ul>
+        {{#each items}}
+          {{> item}}
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+</template>

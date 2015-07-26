@@ -5,5 +5,10 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 reactjs:react
+iron:router
+xolvio:cucumber
+less
+zda:bootstrap
+matb33:bootstrap-theme
+zal3wa:bootstrap-flatly
