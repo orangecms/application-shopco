@@ -1,14 +1,23 @@
+// basic flexbox
 .flex() {
   display: -webkit-flex;
   display: flex;
 }
-
+//  flexbox with direction
 .flex(@direction) {
   .flex();
   flex-direction: @direction;
   -webkit-flex-direction: @direction;
 }
-
+// flexbox with direction and alignment
 .flex(@direction, @align) {
   .flex(@direction);
+  align-items: @align;
+  -webkit-align-items: @align;
+}
+// flexbox with direction, alignment, and justification
+.flex(@direction, @align, @justify) {
+  .flex(@direction);
+  justify-content: @justify;
+  -webkit-justify-content: @justify;
 }

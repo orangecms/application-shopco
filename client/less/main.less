@@ -15,9 +15,9 @@ p {
 .list {
   ul {
     font-size: 18pt;
-    list-style: none;
+    list-style: square;
     li::before {
-      content: counter(item) ".";
+      content: counter(item) ":";
     }
     li {
       padding: .25em .5em;
@@ -32,5 +32,40 @@ p {
         color: #469;
       }
     }
+  }
+}
+
+.item {
+  div {
+    .flex(row, center, flex-end);
+  }
+  span {
+    color: orange;
+  }
+  // let's re-sort this they flex way!
+  span.name {
+    order: 1;
+    -webkit-order: 1;
+  }
+  span.count {
+    order: 2;
+    -webkit-order: 2;
+  }
+  // and add some flavor
+  span.name:before, span.name:after, span.count:after {
+    margin: 0 .25em;
+    display: inline-block;
+  }
+  span.name:before {
+    content: "Weee ";
+    color: blue;
+  }
+  span.name:after {
+    content: " haz ";
+    color: green;
+  }
+  span.count:after {
+    content: " times more phun!";
+    color: red;
   }
 }

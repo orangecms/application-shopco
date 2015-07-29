@@ -1,7 +1,7 @@
 // we need a home :)
 Router.route('/', { template: 'home' });
 
-var routes = ["item", "list"];
+var routes = ["item-param", "list"];
 routes.forEach(function (route) {
   Router.route("/" + route, function () {
     $(".nav-tabs li").removeClass("active");
