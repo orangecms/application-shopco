@@ -1,5 +1,5 @@
-Template.home.helpers({
-  routes: function () {
-    return routes;
+Template.main.helpers({
+  getUrl: function (route) {
+    return Meteor.absoluteUrl(route);
   }
 });

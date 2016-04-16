@@ -1,3 +1,7 @@
+Router.configure({
+  layoutTemplate: 'main'
+});
+
 // we need a home :)
 Router.route('/', { template: 'home' });
 
