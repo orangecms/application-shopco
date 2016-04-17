@@ -1,5 +1,5 @@
 Router.configure({
-  layoutTemplate: 'main'
+  layoutTemplate: 'routes'
 });
 
 // we need a home :)
